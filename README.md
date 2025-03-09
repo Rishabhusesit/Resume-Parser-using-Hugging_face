@@ -20,3 +20,36 @@ Flask: flask, flask-cors, flask-sqlalchemy, flask-migrate
 PostgreSQL: psycopg2-binary
 Others: PyMuPDF, pandas, httpx
 
+Installation
+
+1️ Clone the Repository
+
+git clone https://github.com/Rishabhusesit/Resume-Parser-using-Hugging_face.git
+cd Resume-Parser-using-Hugging_face
+
+2️ Create a Virtual Environment (Optional but Recommended)
+
+python -m venv venv
+source venv/bin/activate  
+
+3️ Install Dependencies
+
+pip install -r requirements.txt
+
+4️ Set Up PostgreSQL Database
+
+sudo apt update && sudo apt install postgresql postgresql-contrib
+psql
+
+Run the following commands in PostgreSQL shell:
+
+CREATE DATABASE recruitment_db;
+CREATE USER recruiter_user WITH ENCRYPTED PASSWORD 'securepassword';
+GRANT ALL PRIVILEGES ON DATABASE recruitment_db TO recruiter_user;
+
+Exit the shell with \q.
+
+5 Start the Server
+
+python app.py
+
