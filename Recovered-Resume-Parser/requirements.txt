@@ -1,0 +1,17 @@
+PyMuPDF==1.23.8
+flask==2.3.2
+spacy==3.5.0
+huggingface-hub==0.22.0
+flask_cors
+
+openai
+pandas
+# smtplib
+# email
+SQLAlchemy
+flask-sqlalchemy
+sentence-transformers
+openai==1.65.2
+httpx==0.28.1
+flask-migrate
+psycopg2-binary==2.9.9

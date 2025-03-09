@@ -1,0 +1,5 @@
+docker build -t recruitment-app .
+docker run -p 5000:5000 
+-e OPENAI_API_KEY="your-api-key" \
+  -e SQLALCHEMY_DATABASE_URI="postgresql://rishabhtiwari@host.docker.internal:5432/recruitment_db" \
+recruitment-app
